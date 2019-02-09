@@ -34,7 +34,7 @@ export const Thumbnail = ({ size, image }: Props) => {
     if (size === ThumbSize.tweetdeck) return setUrl(image)
     if (url) URL.revokeObjectURL(url)
 
-    toJpeg(image, 0.05).then(jpegBlob => {
+    toJpeg(image, 0.3).then(jpegBlob => {
       const url = URL.createObjectURL(jpegBlob)
       setUrl(url)
     })
