@@ -46,6 +46,7 @@ export default () =>
     plugins: [
       new HtmlWebpackPlugin({
         filename: 'index.html',
+        title: 'サムネ映えチェッカー',
         files: {
           css: ['style.css']
         }
