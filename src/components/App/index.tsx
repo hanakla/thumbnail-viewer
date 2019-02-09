@@ -29,6 +29,7 @@ export const App = () => {
 
   return (
     <div className={s.root} onDrop={handleDrop}>
+      {!imageUrl && <div className={s.dropzone}>Drop image here</div>}
       {imageUrl && (
         <div className={s.thumbs}>
           <div className={s.thumb}>
