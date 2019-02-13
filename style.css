@@ -67,4 +67,5 @@ html, body, #root {
   height: 154px;
   background-size: cover;
   border-radius: 14px;
+  background-position: center center;
 }
